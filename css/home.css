@@ -1,0 +1,94 @@
+.container-posts{
+  display: grid;
+  grid-template-columns: 90%;
+  grid-template-rows: repeat(1fr, auto);
+  grid-auto-flow: row;
+  grid-row-gap: 15px;
+  justify-content: center;
+
+}
+
+.card{
+  padding: 15px;
+}
+
+.card h2{
+  text-transform: uppercase;
+}
+
+.card-content{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  color: white;
+}
+
+.card-content-info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-author{
+  width: 10%;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.btn{
+  font-size: inherit;
+  text-align: right;
+  text-transform: uppercase;
+  padding: 15px 32px;
+  background-color: var(--btn-color);
+  color: var(--font-color);
+  border-radius: 5px;
+  border: 3px solid #FCF9EC;
+}
+
+.card-1{
+  background-image: url("../images/2020_amsterdam/amsterdam_1.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.card-2{
+  background-image: url("../images/2020_phantasialand/phantasialand_3.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.card-3{
+  background-image: url("../images/2019_bucharest/bucharest_1.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.card-4{
+  background-image: url("../images/2017_balaton/balaton_1.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+@media (min-width: 1000px) {
+  nav{
+    padding-left: 75%;
+  }
+
+  .container-posts{
+    display: grid;
+    grid-template-columns: 25vw 25vw;
+    grid-template-rows: repeat(2, auto);
+    grid-auto-flow: row;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+    justify-content: center;
+}
